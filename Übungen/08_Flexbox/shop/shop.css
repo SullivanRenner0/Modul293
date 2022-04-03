@@ -13,7 +13,7 @@ body
     justify-content: center;
     max-width: 100%;
     justify-items: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 .name
@@ -32,6 +32,7 @@ img
 .gericht
 {
     padding: 1em;
+    padding-bottom: 3em;
     border: 1px solid black;
     border-radius: 15px;
     margin: 5px;
@@ -39,6 +40,7 @@ img
     height: auto;
     min-width: 300px;
     min-height: auto;
+    position: relative;
 }
 
 .button
@@ -46,9 +48,17 @@ img
     height: 30px;
     width: 100%;
     color: white;
-    background-color: #a1232b;
-    border-radius: 5px;
+    background-color: #b80b29;
+    border-color: #a1232b;
+    border-radius: 10px;
     bottom: 10px;
     position: relative;
     margin-top: 20px;
+}
+
+.button-container
+{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
 }
