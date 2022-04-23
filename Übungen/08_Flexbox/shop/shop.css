@@ -23,10 +23,11 @@ body
     top: 215px;
 }
 
-img
+.gerichtbild
 {
     position: relative;
     top: -60px;
+    order: -1;
     width: 300px;
 }
 .gericht
@@ -61,4 +62,68 @@ img
     position: absolute;
     bottom: 0;
     width: 90%;
+}
+
+.menueicon
+{
+    width: 50px;
+}
+
+#seite
+{
+    display: flex;
+}
+
+#menueband
+{
+    width: auto;
+    background-color: #b80b29;
+    padding-right: 20px;
+    color: white;
+}
+
+.menuebutton
+{
+    display: flex;
+    width: 120px;
+    align-items: center;
+}
+
+a
+{
+    font-size: 20px;
+}
+
+@media all and (orientation:landscape) {
+    
+}
+@media all and (orientation:portrait) {
+    #menueband
+    {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #seite
+    {
+        display: block;
+    }
+}
+
+@media all and (max-width: 600px)
+{
+    .icontext
+    {
+        display: none;
+    }
+}
+
+@media print
+{
+    #menueband
+    {
+        display: none;
+    }
 }
