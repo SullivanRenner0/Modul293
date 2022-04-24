@@ -89,9 +89,21 @@ body
     align-items: center;
 }
 
-a
+.icontext
 {
     font-size: 20px;
+}
+
+.rechts
+{
+    display: block;
+}
+
+#unserangebot
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 @media all and (orientation:landscape) {
@@ -112,17 +124,27 @@ a
     }
 }
 
-@media all and (max-width: 600px)
+@media all and (max-width: 500px)
 {
     .icontext
     {
         display: none;
+        
+    }
+    .menuebutton
+    {
+        width: 55px;
     }
 }
 
 @media print
 {
     #menueband
+    {
+        display: none;
+    }
+
+    .button-container
     {
         display: none;
     }
