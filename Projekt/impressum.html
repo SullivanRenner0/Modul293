@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script_Projekt.js" async></script>
+    <title>Impressum</title>
+</head>
+<body>
+    <header>
+        <div class="head-item">
+            <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="head-item">
+            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+            <a href="organisation.html">Organisation</a>
+        </div>
+
+        <div class="head-item">
+            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+            <a href="iperka.html">IPERKA</a>
+        </div>
+
+        <div class="head-item">
+            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+            <a href="präsentation.html">Präsentationen</a>
+        </div>
+        
+        <div class="head-item">
+            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </header>
+    <div id="hauptteil">
+
+            <div class="titel">
+                Impressum
+            </div>
+            
+            <div class="content">
+                <h2>Autor</h2>
+                <div id="autor">
+                    <img src="./Bilder/autor-portrait.png" alt="">
+                    <div id="autor-infos">
+
+                    </div>
+                </div>
+                <div id="kontakt">
+                    <div id="Kontaktformularseite">
+                        <h3>Kontaktformular</h3>
+                        <form class="kontaktformular" action="" method="" enctype="">
+                        
+                            <div class="row">
+                                <label>Firma: </label>
+                                <div class="field">
+                                    <input class="input" type="text" name="firma" maxlength="50" value="">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label>Anrede <span class="pflichtfeld">*</label>
+                                <div class="field">
+                                    <select class="input not_empty" name="anrede" required="">
+                                        <option value="" selected="selected">&nbsp;</option>
+                                        <option value="Herr">Herr</option>
+                                        <option value="Frau">Frau</option>
+                                        <option value="Divers">Divers</option>
+                                    </select>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="row">	
+                                <label>Vorname: <span class="pflichtfeld">*</span></label>
+                                <div class="field">
+                                    <input class="input not_empty" type="text" name="vorname" maxlength="50" value="" required="">
+                                </div>
+                            </div>
+
+                            <div class="row">	
+                                <label>Nachname: <span class="pflichtfeld">*</span></label>
+                                <div class="field">
+                                    <input class="input not_empty" type="text" name="name" maxlength="50" id="textfield" value="" required="">
+                                </div>
+                            </div>
+                            
+                            <div class="row">	
+                                <label>E-Mail: <span class="pflichtfeld">*</span></label>
+                                <div class="field">
+                                    <input class="input not_empty" id="email" type="text" name="email" maxlength="50" value="" required="">
+                                </div>
+                            </div>
+                            
+                            <div class="row">	
+                                <label>Telefon: </label>
+                                <div class="field">
+                                    <input class="input" type="text" name="telefon" maxlength="50" value="">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label>Betreff: <span class="pflichtfeld">*</span></label>
+                                <div class="field">
+                                    <input class="input not_empty" type="text" name="betreff" maxlength="50" value="" required="">
+                                </div>
+                            </div>
+
+                            <div class="row">	
+                                <label>Nachricht: <span class="pflichtfeld">*</span></label>
+                                <div class="field">
+                                    <textarea class="input not_empty" name="nachricht" cols="30" rows="10" required="" style="width: 489px; height: 110px; resize: none;"></textarea>
+                                </div>
+                            </div>
+                        
+                            <div class="row">
+                                <label></label>
+                                <div class="field buttons">
+                                    <div class="pflichtfeldhinweis">
+                                    Hinweis: Felder mit <span class="pflichtfeld">*</span> müssen ausgefüllt werden.</div>
+                                    <input type="submit" name="kf-km" value="Senden" onclick="senden();">
+                                    <input type="submit" name="delete" value="Löschen" onclick="loeschen()">
+                                </div>
+                            </div>      
+                        
+                        </form> 
+                    </div>
+
+
+                    <div id="kontakadressen">
+                        <h3>Bei dringenden Anliegen</h3>
+                        <a href="mailto:sullivan.renner@edu.gbssg.ch">sullivan.renner@edu.gbssg.ch</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- <div id="footer">Kontakt</div> -->
+</body>
+<style>
+    .content h2
+    {
+        text-align: center;
+    }
+</style>
+</html>

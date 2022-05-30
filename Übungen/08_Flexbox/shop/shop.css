@@ -69,7 +69,7 @@ body
     width: 50px;
 }
 
-#seite
+#shop
 {
     display: flex;
 }
@@ -106,9 +106,6 @@ body
     text-align: center;
 }
 
-@media all and (orientation:landscape) {
-    
-}
 @media all and (orientation:portrait) {
     #menueband
     {
@@ -118,7 +115,7 @@ body
         justify-content: center;
     }
 
-    #seite
+    #shop
     {
         display: block;
     }

@@ -1,0 +1,78 @@
+html
+{
+    height: 100%;
+}
+body
+{
+    margin: 0;
+    height: 100%;
+}
+header
+{
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: left;
+    height: 7%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.head-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    border-right: 3px solid grey;
+    width: 25%;
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+.head-item:hover
+{
+    cursor: pointer;
+}
+.head-item a
+{
+    text-decoration: none;
+    color: white;
+}
+#hauptteil
+{
+    display: block;
+    position: fixed;
+    top: 40px;
+    /* height: calc(100vh - 108px); */
+    justify-content: center;
+    background-color: #92A8D1;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    height: 93%;
+    width: 100%;
+}
+.titel
+{
+    font-size: x-large;
+    padding: 15px;
+}
+.text
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*
+#footer
+{
+    display: flex;
+    bottom: 0px;
+    position:fixed;
+    color: white;
+    font-size: x-large;
+    background-color: rgb(59, 59, 59);
+    height: 12%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 15px solid transparent;
+} */
