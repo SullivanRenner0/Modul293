@@ -5,34 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <script src="script_Projekt.js" async></script>
     <title>Impressum</title>
 </head>
 <body>
-    <header>
-        <div class="head-item">
-            <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+    <div href="" id="nach-oben" onclick="nachOben()">
+        <img src="./Bilder/nach-oben.svg" alt="">
+    </div>
+    <div id="little-menu">
+        <div class="little-menu-item">
             <a href="index.html">Home</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+        
+        <div class="little-menu-item">
             <a href="organisation.html">Organisation</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+        
+        <div class="little-menu-item">
             <a href="iperka.html">IPERKA</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+        
+        <div class="little-menu-item">
             <a href="präsentation.html">Präsentationen</a>
         </div>
         
-        <div class="head-item">
-            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+        <div class="little-menu-item">
             <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+    <header id="head">
+        <div class="hamburger" onclick="showMenu()">
+            <div class="hamburger-line" id="line"></div>
+        </div>
+        
+
+        <div class="head-item">
+            <a href="index.html">
+                <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+                Home
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="organisation.html">
+            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+                Organisation
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="iperka.html">
+            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+                IPERKA
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="präsentation.html">
+            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+                Präsentationen
+            </a>
+        </div>
+        
+        <div class="head-item">
+            <a href="impressum.html">
+            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+                Impressum
+            </a>
         </div>
     </header>
     <div id="hauptteil">
@@ -42,11 +82,23 @@
             </div>
             
             <div class="content">
-                <h2>Autor</h2>
+                <ul id="inhalt">
+                    <h3>Inhalt</h3>
+                    <li><a href="#autor-titel">Autor</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#abbildungsverzeichniss">Abbildungsverzeichniss</a></li>
+                </ul>
+                <h2 id="autor-titel">Autor</h2>
                 <div id="autor">
-                    <img src="./Bilder/autor-portrait.png" alt="">
+                    <img id="autor-portrait" src="./Bilder/autor.jpg" alt="">
                     <div id="autor-infos">
-
+                        Sullivan Renner
+                        <br>
+                        9606 Bütschwil
+                        <br>
+                        Oberdorfstrasse 36
+                        <br>
+                        076 265 79 12
                     </div>
                 </div>
                 <div id="kontakt">
@@ -135,14 +187,115 @@
                         <a href="mailto:sullivan.renner@edu.gbssg.ch">sullivan.renner@edu.gbssg.ch</a>
                     </div>
                 </div>
+
+                <h3 id="abbildungsverzeichniss">Abbildungsverzeichnis</h3>
+                <h4 class="no-Margin">Organisation</h4>
+                <table class="text-align-center">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="./organisation.html#ablauforganisation">Ablauforganisation</a>
+                            </td>
+                            <td>
+                                Quelle: <a href="https://www.bwl-lexikon.de/wiki/aufbauorganisation/" target="_blank" class="externerLink">https://www.bwl-lexikon.de/wiki/aufbauorganisation/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./organisation.html#ablauforganisation">Aufbauorganisation</a>
+                            </td>
+                            <td>
+                                Quelle: <a href="https://www.bwl-lexikon.de/wiki/aufbauorganisation/" target="_blank" class="externerLink">https://www.bwl-lexikon.de/wiki/aufbauorganisation/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./organisation.html#1-4.2">Gannt-Diagramm</a>
+                            </td>
+                            <td>
+                                Quelle: eigene Aufnahme
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./organisation.html#3-1">Notizen</a>
+                            </td>
+                            <td>
+                                Quelle: eigene Aufnahme
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./organisation.html#4-2">Jira</a>
+                            </td>
+                            <td>
+                                Quelle: eigene Aufnahme
+                            </td>
+                        </tr>
+                    <tbody>
+                </table>
+                <br>
+                <h4 class="no-Margin">IPERKA</h4>
+                <table class="text-align-center">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="./iperka.html#bedeutung">Informieren</a>
+                            </td>
+                            <td>
+                                Quelle: Flipchart aus Unterricht
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./iperka.html#bedeutung">Planen</a>
+                            </td>
+                            <td>
+                                Quelle: Flipchart aus Unterricht
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./iperka.html#bedeutung">Entscheiden</a>
+                            </td>
+                            <td>
+                                Quelle: Flipchart aus Unterricht
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./iperka.html#bedeutung">Realisieren</a>
+                            </td>
+                            <td>
+                                Quelle: Flipchart aus Unterricht
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./iperka.html#bedeutung">Kontrollieren</a>
+                            </td>
+                            <td>
+                                Quelle: Flipchart aus Unterricht
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./iperka.html#bedeutung">Auswerten</a>
+                            </td>
+                            <td>
+                                Quelle: Flipchart aus Unterricht
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
     </div>
-    <!-- <div id="footer">Kontakt</div> -->
 </body>
-<style>
-    .content h2
-    {
-        text-align: center;
-    }
-</style>
+<footer>
+    <div id="foot">
+        Sullivan Renner
+        <br>
+        07.06.2022, V. 2.0
+    </div>
+</footer>
 </html>

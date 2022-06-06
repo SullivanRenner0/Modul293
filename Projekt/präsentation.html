@@ -5,33 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="script_Projekt.js" async></script>
     <title>Präsentation</title>
 </head>
 <body>
-    <header>
-        <div class="head-item">
-            <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+    <div href="" id="nach-oben" onclick="nachOben()">
+        <img src="./Bilder/nach-oben.svg" alt="">
+    </div>
+    <div id="little-menu">
+        <div class="little-menu-item">
             <a href="index.html">Home</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+        
+        <div class="little-menu-item">
             <a href="organisation.html">Organisation</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+        
+        <div class="little-menu-item">
             <a href="iperka.html">IPERKA</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+        
+        <div class="little-menu-item">
             <a href="präsentation.html">Präsentationen</a>
         </div>
         
-        <div class="head-item">
-            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+        <div class="little-menu-item">
             <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+    <header id="head">
+        <div class="hamburger" onclick="showMenu()">
+            <div class="hamburger-line" id="line"></div>
+        </div>
+        <div class="head-item">
+            
+            <a href="index.html">
+                <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+                Home
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="organisation.html">
+            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+                Organisation
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="iperka.html">
+            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+                IPERKA
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="präsentation.html">
+            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+                Präsentationen
+            </a>
+        </div>
+        
+        <div class="head-item">
+            <a href="impressum.html">
+            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+                Impressum
+            </a>
         </div>
     </header>
     <div id="hauptteil">
@@ -43,13 +83,38 @@
         <div class="content">
             <ul id="inhalt">
                 <h3>Inhalt</h3>
-                <li><a href="#aufgabe1">Erste Aufgabe</a></li>
-                <li><a href="#aufgabe2">Zweite Aufgabe</a></li>
-                <li><a href="#aufgabe3">Dritte Aufgabe</a></li>
-                <li><a href="#aufgabe4">Vierte Aufgabe</a></li>
-                <li><a href="#aufgabe5">Fünfte Aufgabe</a></li>
+                <li><a href="#checkliste">Elektronische Checkliste</a></li>
+                <li><a href="#bisjetzt">Welche Punkte habe ich bis jetzt beachtet</a></li>
+                <li><a href="#abjetzt">Auf welche Punkte möchte ich zukünftig mehr achten</a></li>
             </ul>
+
+            <h3 id="checkliste">Elektronische Checkliste</h3>
+            <a href="./Dokumente/Präsentation-Checkliste.docx" download="Checkliste.docx" > Checkliste.docx</a>
+
+            <br>
+            <br>
+
+            <h3 id="bisjetzt">Welche Punkte habe ich bis jetzt beachtet</h3>
+            Bis jetzt habe ich immer zuerst über das Thema recherchiert und das dann direkt in die Powerpoint geschrieben. 
+            Dort habe ich dann auch eine Gliederung erstellt.
+            <br>
+            <br>
+            
+            <h3 id="abjetzt">Auf welche Punkte möchte ich zukünftig mehr achten</h3>
+            Künftig möchte ich darauf achten die Information, welche ich durch das Recherchieren erhalte, in Stichworten zusammenzufassen. 
+            <br>
+            Auch möchte ich mich besser auf die Präsentation vorbereiten und diese mehr üben. 
+            Dazu möchte ich mit meinen Präsentationen früher beginnen, da das oft der Grund ist weshalb ich wenig Zeit für die Präsentation habe und dementsprechend weniger übern kann.
+            <br>
+            Zudem möchte ich in Zukunft mit einem orginallen Start beginnen und mit einem speziellen Schluss aufhören
         </div>
     </div>
 </body>
+<footer>
+    <div id="foot">
+        Sullivan Renner
+        <br>
+        07.06.2022, V. 2.0
+    </div>
+</footer>
 </html>

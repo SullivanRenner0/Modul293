@@ -5,33 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="script_Projekt.js" async></script>
     <title>Organisation</title>
 </head>
 <body>
-    <header>
-        <div class="head-item">
-            <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+    <div href="" id="nach-oben" onclick="nachOben()">
+        <img src="./Bilder/nach-oben.svg" alt="nach oben">
+    </div>
+    <div id="little-menu">
+        <div class="little-menu-item">
             <a href="index.html">Home</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+        
+        <div class="little-menu-item">
             <a href="organisation.html">Organisation</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+        
+        <div class="little-menu-item">
             <a href="iperka.html">IPERKA</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+        
+        <div class="little-menu-item">
             <a href="präsentation.html">Präsentationen</a>
         </div>
         
-        <div class="head-item">
-            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+        <div class="little-menu-item">
             <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+    <header id="head">
+        <div class="hamburger" onclick="showMenu()">
+            <div class="hamburger-line" id="line"></div>
+        </div>
+        <div class="head-item">
+            
+            <a href="index.html">
+                <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+                Home
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="organisation.html">
+            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+                Organisation
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="iperka.html">
+            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+                IPERKA
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="präsentation.html">
+            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+                Präsentationen
+            </a>
+        </div>
+        
+        <div class="head-item">
+            <a href="impressum.html">
+            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+                Impressum
+            </a>
         </div>
     </header>
     <div id="hauptteil">
@@ -43,15 +83,328 @@
         <div class="content">
             <ul id="inhalt">
                 <h3>Inhalt</h3>
-                <li><a href="#1-1">Erste Aufgabe</a></li>
-                <li><a href="#aufgabe2">Zweite Aufgabe</a></li>
-                <li><a href="#aufgabe3">Dritte Aufgabe</a></li>
-                <li><a href="#aufgabe4">Vierte Aufgabe</a></li>
-                <li><a href="#aufgabe5">Fünfte Aufgabe</a></li>
+                <li><a href="#1-1">Aufgaben und Aufträge in ihrem Lehrbetrieb</a></li>
+                <li><a href="#1-2">Beziehung zwischen Aufbau- und Ablauforganisation</a></li>
+                <li><a href="#1-3">Projektantrag</a></li>
+                <li><a href="#1-4">Phasenablauf IT-Projekt</a></li>
+                <li><a href="#1-4.2">Gannt-Diagramm</a></li>                
+                <li><a href="#1-4.3">Projektrollen und deren Aufgaben, Kompetenzen und Verantwortlichkeiten</a></li>                
+                <li><a href="#3-1">Notizen</a></li>
+                <li><a href="#3-2">Informationen strukturieren</a></li>
+                <li><a href="#4-1">Eigene Planung</a></li>     
+                <li><a href="#4-2">Reflexion Arbeitsplanung</a></li>
             </ul>
             <h3 id="1-1">Aufgaben und Aufträge in ihrem Lehrbetrieb</h3>
+            <table id="table-1-1">
+                <tr>
+                    <th>Aufgaben</th>
+                    <td>In meinem Lehrbetrieb habe ich die Aufgabe das Sitzungszimmer nach dem Benutzen zu reinigen und aufzuräumen. Die ist in der Regel einmal in der Woche, da wir einmal in der Woche eine Entwicklersitzung haben. Natürlich haben andere Abteilungen, wie z.B. der Support, auch eine Sitzung, jedoch muss ich nach dieser nicht aufräumen.</td>
+                </tr>
+                <tr>
+                    <th>Auftrag</th>
+                    <td>Ich hatte einmal den Auftrag, für die Lösungsvorschläge (macht ein Mitarbeiter einem Kunden, darin enthalten ist z.B. der ungefähre Preis) den Flyer, 10 Gründe für Sorba, welcher am Ende des Dokuments ist, auch auf Französisch und Italienisch einzubinden. Denn bisher war dieser immer auf Deutsch.</td>
+                </tr>
+                <tr>
+                    <th>Informationen</th>
+                    <td>Zu den Informationen gehört: Startdatum, Enddatum(Abgabetermin), Ort, Dauer(optional), benötigte Hilfsmittel.</td>
+                </tr>
+                <tr>
+                    <th>Sonstiges</th>
+                    <td>Abgesehen vom Sitzungszimmer aufräumen, habe ich nur Aufträge. Und zwar ist das so, dass die Entwicklung wöchentlich ein Meeting hat, in dem wir durch jeden Auftrag durchgehen (von allen) und kurz sagen, ob wir noch lange daran haben. Falls jemand dann sehr wenige oder nur kurze Aufträge hat, bekommt er dann noch einmal welche.</td>
+                </tr>
+            </table>
 
+            <br>
+            
+            <h3 id="1-2">Beziehung zwischen Aufbau- und Ablauforganisation</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Aufbauorganisation</th>
+                        <th>Ablauforganisation</th>
+                    </tr>   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aufgabe</td>
+                        <td>
+                            <ul id="aufgabe">
+                                <li>Legt die Rahmenbedingungen fest</li>
+                                <li>Stellt eine Struktur her</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="margin-0">
+                                <li>Definiert und regelt die Arbeits- und Informationsprozesse innerhalb dieses Rahmens</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Beispiel</td>
+                        <td class="text-align-center"><img src="./Bilder/Aufbauorganisation.png" alt="Aufbauorganisation" class="organisation" id="aufbauorganisation"></td>
+                        <td class="text-align-center"><img src="./Bilder/Ablauforganisation.png" alt="Ablauforganisation" class="organisation" id="ablauforganisation"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Was macht Unternehmen in Bezug zu Aufbau- oder Ablauforganisation
+                            erfolgreicher als andere?
+                        
+                        </th>
+                        <td>
+                            Firma kann viel besser arbeiten, wenn sich jeder auf seinen Bereich konzentrieren kann und nicht an 2 komplett unterschiedlichen Orten (z.B. Marketing und Entwicklung) arbeiten muss.
+                            <br>
+                            Es läuft auch alles viel einfacher/besser, wenn es einen geregelten Arbeitsablauf gibt.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <br>
+
+            <h3 id="1-3">Projektantrag</h3>
+            <a href="./Dokumente/projektantrag.pdf" target="_blank">
+                Projektantrag.pdf
+            </a>
+
+            <br>
+            <br>
+
+            <h3 id="1-4">Phasenablauf IT-Projekt</h3>
+            <u>Meine Aufträge im Lehrbetrieb</u>
+            <ul class="margin-op-0">
+                <li>
+                    <h4 class="no-Margin">Image-Slider entwickeln (HTML, CSS, JavaScript)</h4>
+                    Realisierung - Ich habe einem Image-Slider(Bilder-Karusell) mit HTML, CSS und hauptsächlich JavaScript entwickelt.
+                        In dem Slider kann man mit Pfeiltasten zwischen den Bilden wechseln.
+                        Man kann auch beliebig viel Bilder hinzufügen/entfernen.
+                        <br>
+                </li>
+                <li>
+                    <h4 class="no-Margin">Ausdruck von Bestellung (VB.NET)</h4>
+                    Realisierung - Ich haben den Ausdruck von einer Bestellung ausdruckbar/als PDF speicherbar gemacht. 
+                    Dazu musste ich die Daten aus verschieden Tabellen holen und dann zusammentragen/filtern.
+                    <br>
+                </li>
+                <li>
+                    <h4 class="no-Margin">Ausdruck eines Tagesrapportes anpassen anpassen (VB.NET)</h4>
+                    Realisierung - Ich habe bei einem Tagesrapport ermöglicht, den Tagesrapport von mehreren Leuten gleichzeitg auszudrucken.
+                    <br>
+                </li>
+                <li>
+                    <h4 class="no-Margin">Funktion, um Grösse, Qualität, Bittiefe und Komprimierungslevel von Bildern zu verringern, erstellt (C#)</h4>
+                    Realisierung - Ich habe den Auftrag erhalten eine Funktion zu entwickeln, welche Bilder verändert. 
+                    Es soll die Grösse des Bildes, die Qualität, die Bittiefe und das Komprimierungslevel geändert werden können. 
+                    Das ganze dient dazu, dass Bilder weniger Speicher brauchen.
+                    <br>
+                </li>
+            </ul>
+            <a href="./Dokumente/Dokumentation_Sullivan Renner.pdf" target="_blank"><u>Mein Projekt in der Sekundarschule - Entwickeln eines Games</u></a>
+            <ul class="margin-top-0">
+                <li class="noMarker">
+                    In der Sekundarschule habe ich als Projektarbeit ein eigenes Game entwickelt. 
+                    Dabei muss man möglichst lange den den Gegner ausweichen und sie dabei noch abschiesen. 
+                    <br>
+                    Da ich genau wusste das die kurze Zeit zu kurz war, um eine Programmiersprache zu lernen, habe ich mich dazu entscheiden, mein Game mit <a href="https://snap.berkeley.edu/snap/snap.html#" target="_blank">Snap!</a> (ähnlich wie Scratch) zu erstellen. 
+                    <br>
+                    Ich habe daraus gelernt wie wichtig Zeitmangement ist, da ich am Afang dachte dass ich locker fertig werde aber es am Schluss sehr knapp wurde.
+                </li>
+            </ul>
+
+            <br>
+
+            <h3 id="1-4.2">
+                Gannt-Diagramm
+            </h3>
+
+            <div id="gannt">
+                Das erstellen ist mir eher einfach gelungen, hat aber etwas länger gedauert.
+                <br>
+                Da ich das Diagramm in Excel erstellt habe, hatte ich einge Vidos zur Hilfe.
+                <img src="./Bilder/Gannt.png" alt="Gannt-Diagramm" id="gannt-img">
+            </div>             
+
+            <br>
+            <br>
+
+            <h3 id="1-4.3">Projektrollen und deren Aufgaben, Kompetenzen und Verantwortlichkeiten</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rolle</th>
+                        <th>Aufgabe</th>
+                        <th>Kompetenz</th>
+                        <th>Verantwortung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Arbeiter/Aufgabenträger</th>
+                        <td>
+                            <ul>
+                                <li>Das Projekt zu entwickeln/realisieren</li>
+                                <li>Die vom Projektleiter zugeteilten Aufgaben erledigen</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Auf das Projekt zugreifen könne</li>
+                                <li>Berechtigung am Projekt Änderungen vorzunehmen </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Dass die Aufgaben korrekt realisiert werden</li>
+                                <li>Dass die Aufgaben gewissenvoll erledigt werden </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tester</th>
+                        <td>
+                            <ul>
+                                <li>Überprüfen ob das Projekt richtig umgesetzt wurde und ob es funktioniert</li>
+                                <li>Feedback an Arbeiter/Projektleiter geben (was nicht gut ist/was muss noch erledigt werden)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Kennt das Projekt und das Ziel</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Es sind keine Fehler/Bugs im fertigen Projekt</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Projektleiter</th>
+                        <td>
+                            <ul>
+                                <li>Den Arbeitern die Aufträge zuweisen</li>
+                                <li>Mit dem Kunden sprechen um zu erfahren, was er genau will</li>
+                                <li>Darauf Achten dass Deadlines eingehalten werden</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Aufträge zu verwalten und zuzuweisen</li>
+                                <li>Kennt die Deadlines und den aktuellen Stand des Projektes</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Das Projekt/-ziel wird erreicht</li>
+                                <li>Die Wünsch des Kunden sind erfüllt</li>
+                                <li></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <h3 id="3-1">Notizen</h3>
+            <u>Meine Notizen)</u>
+            <br>
+            <div id="notizen">
+                <div>
+                    Normalerweise mache ich meine Notizen von Hand auf Papier. 
+                    Dabei nehme ich eigentlich für jedes neues "Thema" ein neues Blatt/neue Seite. 
+                    Die wichtigsten Sachen umrande ich (Bild). 
+                    Entweder das Blatt ist lose oder in einem Block (mehrheitlich).
+                    <br>        
+                    Je nach dem wie wichtig das Thema ist und ob ich nochmals irgendwann habe, bewahre ich
+                    das Blatt auf oder nicht. Z.B. Ist ein Blatt über Löwen nicht so wichtig wie ein Blatt über eine
+                    Programmiersprache, welches ich irgendwann nochmal brauchen könnte.         
+                    Dabei schreibe ich mehrheitlich Stichworte, aber es kann auch vorkommen das ich mal
+                    mehrere Sätze zusammen schreibe.
+                </div>
+                <img src="./Bilder/Notizen.png" alt="Meine Notizen">
+            </div>
+            <br>
+            <br>
+            <u>Gute Notizen)</u>
+            <br>
+            Gute Notizen sollten mit Abkürzungen, Symbolen, Stichworten und kurzen Sätzen arbeiten. 
+            Ebenfalls hilfreich sind Bilder, da sie vom Gehirn schneller/besser verarbeitet werden als komplizierte Beschreibungen/Formulierungen. 
+             
+            <br>
+            <br>
+            
+            <u>Verbesserungen für meine Notizen</u> 
+            <br>
+            Ich sollte mehr darauf achten nicht ganze Sätze zu formulieren.
+            <br>
+            Vielleicht sollte ich die Quellen mit aufschreiben damit ich es nochmals genau nachlesen könnte
+        
+            <br>
+            <br>
+
+            <h3 id="3-2">Informationen strukturieren</h3>
+            
+            <u>Wie strukturiere ich Informationen)</u>
+            <br>
+            Daten können z.B. als Tabelle strukturiert sein. 
+            Oder als Stichworte. Oder als Mindemap. …
+            <br>
+            Ich persönlich bevorzuge die Tabelle bis zu einem gewissen Punkt, wo es einfach zu viele Informationen sind und ich deshalb dann auf Stichworte wechsle. 
+            Der Grund ist dass eine zu grosse Tabelle nicht mehr übersichtlich ist. 
+            Da man lange nach genau einem Eintrag suchen könnte
+            <br>
+            <br>
+            <u>StrukturierungsTool - Word)</u>
+            <br>
+            Mit Word kann ich auf der ersten Seite eine Liste mit Stichworten machen, und diese dann auf eine Seite weiter hinten verwiesen, wo dann z.B. Ein grosser, langer Text steht mit der Quelle. 
+            Dies kann man durch ein Inhaltsverzeichnis oder durch Querverweise machen. 
+            Dadurch kommt man schnell zu den Informationen welche man sucht.
+            <br>
+            <br>
+            <a href="./Dokumente/Beispiel Daten strukturieren.pdf" target="_blank">
+                Beispiel.pdf
+            </a>
+            
+            <br>
+            <br>
+            
+            <h3 id="4-1">Eigene Planung</h3>
+            ALPEN-Methode
+            <br>
+            Da ich es leider versäumt habe, die APLEN-Methohe über mehrere Tage zu Testen, ist dieser Teil der Aufgabe nicht gelöst.
+            <br>
+            <br>
+        
+            <h3 id="4-2">Reflexion Arbeitsplanung</h3>
+        
+            <u>Arbeitsplanung im Lehrbetrieb</u>
+            <br>
+            Bei und im Betrieb arbeiten wir mit dem Tool <a href="https://www.atlassian.com/de/software/jira" target="_blank">Jira</a>.
+            <br>
+            Dort kann man innerhalb eines Projektes Tasks erstellen und Personen zuweisen. 
+            <br>
+            Jeder Task kann einen Status haben (Offen, In Arbeit, Waiting for Review, In Review oder Closed). 
+            <br>
+            Im Bereich "Ihre Aufgaben" kann man die bearbeiteten, die angesehenen, die einem Zugeordneten und die markierten Tasks. (Bild)
+            <img src="./Bilder/jira.PNG" alt="jira" id="jira">
+            <br>
+            <u>Arbeitsplanung im Privaten</u>
+            <br>
+            Persönlich nutze ich fast gar keine Arbeitsplanung. 
+            Aber wenn etwas in etwas entfernter Zukunft ist, trage ich das in den Kalender/Oulook ein.
+        
         </div>
     </div>
 </body>
+<footer>
+    <div id="foot">
+        Sullivan Renner
+        <br>
+        07.06.2022, V. 2.0
+    </div>
+</footer>
 </html>

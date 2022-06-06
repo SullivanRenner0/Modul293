@@ -1,24 +1,67 @@
 html
 {
     height: 100%;
+    background-color: #92a8d1;
+    scroll-behavior: smooth;
+    display: block;
 }
 body
 {
     margin: 0;
     height: 100%;
 }
-header
+
+footer
 {
     background-color: rgb(59, 59, 59);
+    height: 7vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#foot
+{
+    height: 100%;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+}
+
+#nach-oben
+{
+    position: fixed;
+    bottom: 7vh;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+    background-color: rgba(0, 0, 0, 0.300);
+    z-index: 1;
+    cursor: pointer;
+}
+
+#nach-oben img
+{
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+#head
+{
+    background-color: rgba(146, 168, 209, 1);
     display: flex;
     max-width: 100%;
     width: 100%;
-    justify-content: left;
-    height: 7%;
+    justify-content: end;
+    height: 7vh;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 5;
 }
+
 .head-item
 {
     display: flex;
@@ -37,24 +80,38 @@ header
 }
 .head-item a
 {
+    height: 100%;
     text-decoration: none;
     color: white;
     width: auto;
     text-align: center;
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.hamburger
+{
+    display: none;
+    z-index: 6;
+}
+
+#little-menu{
+    display: none;
+    background-color: rgba(65, 65, 65, 0.301);
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+}
+
 #hauptteil
 {
     position: relative;
-    /* color: white; */
     display: block;
-    top: 40px;
-    /* height: calc(100vh - 108px); */
+    padding-top: 40px;
     justify-content: center;
-    background-color: #92A8D1;
-    /* overflow: hidden; */
-    /* overflow-y: scroll; */
-    height: 94%;
+    background-color: rgba(146, 168, 209, 1);
+    height: 84vh;
     width: 100%;
 }
 .titel
@@ -64,52 +121,99 @@ header
 }
 .content
 {
-    background-color: #92A8D1;
+    background-color: rgba(146, 168, 209, 1);
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
+    padding-bottom: 10vh;
+}
+
+.content h3
+{    
+  scroll-margin-top: 10vh;
+}
+.little-menu-item
+{
+    align-items: center;
+    min-width: 110px;
+    padding: 18px;
+    background-color: #7977d8;
+    display: flex;
+    justify-content: center;
+    margin: 48px;
+    font-size: 23px;
+}
+.little-menu-item a
+{
+    color: white;
 }
 .content a
 {
-    color: #3673b9;
+    color: #221dd6;
 }
-/*
-#footer
+
+table
 {
-    display: flex;
-    bottom: 0px;
-    position:fixed;
-    color: white;
-    font-size: x-large;
-    background-color: rgb(59, 59, 59);
-    height: 12%;
     width: 100%;
-    box-sizing: border-box;
-    border: 15px solid transparent;
-} */
+}
+
+th, td
+{
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.organisation
+{
+    width: 35vw;
+}
+
+.volleBreite
+{
+    width: 100%;
+}
 
 #inhalt
 {
     display: table;
-    background-color: #b2c4e4;
+    background-color: rgba(146, 168, 209, 1);
     width: fit-content;
-    border: 1px solid #a2a9b1;
+    border: 5px solid #373f49;
     padding-right: 28px;
     padding-bottom: 15px;
 }
 
 .icon
 {
-    height: 160%;
+    height: 115%;
+    margin-right: 10px;
 }
 
-
-
-
+#autor-titel
+{
+    text-align: center;
+}
 
 #autor
 {
     display: flex;
-    width: 100%;
+    background-color: #2a279c;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#autor-portrait
+{
+    height: 115px;
+    border-radius: 30px;
+}
+
+#autor-infos
+{
+    display: block;
 }
 
 #kontakt
@@ -117,8 +221,104 @@ header
     display: flex;
 }
 
+#Kontaktformularseite
+{
+    width: 45%;
+}
+
+.pflichtfeldhinweis
+{
+    width: 150%;
+} 
+
 #kontakadressen
 {
     width: 100%;
     text-align: center;
+}
+
+.no-Margin{
+    margin: 0;
+}
+
+.noMarker
+{
+    list-style-type: none;
+}
+
+#gannt
+{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:left;
+}
+
+#gannt img
+{
+    width: 34vw;
+    margin-left: 3vw;
+    border: 1px solid black;
+}
+
+#notizen
+{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:left;
+}
+
+#notizen img
+{
+    margin:10px;
+    border: 1px solid black;
+    width: 40vw;
+}
+
+#aufgabe
+{
+    margin: 0;
+    min-width: 270px;
+}
+
+#jira
+{
+    width: 94vw;
+}
+
+.margin-0
+{
+    margin: 0;
+}
+
+.margin-top-0
+{
+    margin-top: 0;
+}
+
+.text-align-center
+{
+    text-align: center;
+}
+
+#buchstaben
+{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.buchstabe
+{
+    max-width: 30vw;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.externerLink
+{
+    /* padding-left: 3em; */
 }

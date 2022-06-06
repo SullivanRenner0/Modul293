@@ -5,33 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="script_Projekt.js" async></script>
     <title>IPERKA</title>
 </head>
 <body>
-    <header>
-        <div class="head-item">
-            <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+    <div href="" id="nach-oben" onclick="nachOben()">
+        <img src="./Bilder/nach-oben.svg" alt="">
+    </div>
+    <div id="little-menu">
+        <div class="little-menu-item">
             <a href="index.html">Home</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+        
+        <div class="little-menu-item">
             <a href="organisation.html">Organisation</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+        
+        <div class="little-menu-item">
             <a href="iperka.html">IPERKA</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+        
+        <div class="little-menu-item">
             <a href="präsentation.html">Präsentationen</a>
         </div>
         
-        <div class="head-item">
-            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+        <div class="little-menu-item">
             <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+    <header id="head">
+        <div class="hamburger" onclick="showMenu()">
+            <div class="hamburger-line" id="line"></div>
+        </div>
+        <div class="head-item">
+            
+            <a href="index.html">
+                <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+                Home
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="organisation.html">
+            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+                Organisation
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="iperka.html">
+            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+                IPERKA
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="präsentation.html">
+            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+                Präsentationen
+            </a>
+        </div>
+        
+        <div class="head-item">
+            <a href="impressum.html">
+            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+                Impressum
+            </a>
         </div>
     </header>
     <div id="hauptteil">
@@ -44,13 +84,146 @@
             
             <ul id="inhalt">
                 <h3>Inhalt</h3>
-                <li><a href="#aufgabe1">Erste Aufgabe</a></li>
-                <li><a href="#aufgabe2">Zweite Aufgabe</a></li>
-                <li><a href="#aufgabe3">Dritte Aufgabe</a></li>
-                <li><a href="#aufgabe4">Vierte Aufgabe</a></li>
-                <li><a href="#aufgabe5">Fünfte Aufgabe</a></li>
+                <li><a href="#bedeutung">Bedeutung der Buchstaben</a></li>
+                <li><a href="#praxisbeispiel">Praxisbeispiel</a></li>
             </ul>
+
+            <h3 id="bedeutung">Bedeutung der Buchstaben</h3>
+            <div id="buchstaben">
+                <img class="buchstabe" id="Informieren" src="./Bilder/IPERKA/Informieren.png" alt="Informieren">
+                <img class="buchstabe" id="Planen" src="./Bilder/IPERKA/Planen.png" alt="Planen">
+                <img class="buchstabe" id="Entscheiden" src="./Bilder/IPERKA/Entscheiden.jpg" alt="Entscheiden">
+                <img class="buchstabe" id="Realisieren" src="./Bilder/IPERKA/Realisieren.jpg" alt="Realisieren">
+                <img class="buchstabe" id="Kontrollieren" src="./Bilder/IPERKA/Kontrollieren.jpg" alt="Kontrollieren">
+                <img class="buchstabe" id="Auswertung" src="./Bilder//IPERKA/Auswertung.png" alt="Auswertung">
+            </div>
+            
+            <br>
+
+            <h3 id="praxisbeispiel">Praxisbeispiel - Implementierung einer Softwareanwendung</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Einzelschritte</th>
+                        <th>Tätigkeiten</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Informieren
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Informationen über das Ziel sammeln</li>
+                                <li>Ist das Ziel erreichbar </li>
+                                <li>Was sind die Vorgaben</li>
+                                <li>Was muss ich mir aneignen</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Mit dem Auftraggeber sprechen</li>
+                                <li>Mit Beteiligten abklären</li>
+                                <li>Mit Auftraggeber/Projektleiter sprechen</li>
+                                <li>Mit Projektleiter/Verantwortlichem sprechen</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Planen
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Was wird benötigt (Zeit, Ressourcen,…)</li>
+                                <li>Ziel und Lösungsweg festlegen</li>
+                                <li>(Mehrere) Lösungsvarianten vorschlagen</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>(Vielleicht mit Projektleiter) Aufgaben durchgehen und schätzen</li>
+                                <li>Mit Projektleiter besprechen</li>
+                                <li>Lösungsvarianten ausdenken und vorschlagen</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Entscheiden
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Varianten vergleichen (Eventuell mit Kunde/Auftraggeber)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sich für eine Variante entscheiden</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Realisieren
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Die Ausgewählte Variante umsetzten / implementieren</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Code schreiben</li>
+                                <li>(Lizenz lösen)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Kontrollieren
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Überprüfen ob es funktioniert</li>
+                                <li>überprüfen ob die Ziele erreciht wurden</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Mit Tester besprechen</li>
+                                <li>Mit Kunde / Auftraggeber besprechen</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Auswerten
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Projekt reflektieren</li>
+                                <li>Tipps für nächstes Projekt überlegen / notieren</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Erfahrungen auswerten</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
+<footer>
+    <div id="foot">
+        Sullivan Renner
+        <br>
+        07.06.2022, V. 2.0
+    </div>
+</footer>
 </html>

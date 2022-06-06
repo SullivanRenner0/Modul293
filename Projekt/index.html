@@ -5,34 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="media.css">
     <script src="script_Projekt.js" async></script>
     <title>E-Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="head-item">
-            <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+    <div id="little-menu">
+        <div class="little-menu-item">
             <a href="index.html">Home</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+        
+        <div class="little-menu-item">
             <a href="organisation.html">Organisation</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+        
+        <div class="little-menu-item">
             <a href="iperka.html">IPERKA</a>
         </div>
-
-        <div class="head-item">
-            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+        
+        <div class="little-menu-item">
             <a href="präsentation.html">Präsentationen</a>
         </div>
         
-        <div class="head-item">
-            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+        <div class="little-menu-item">
             <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+    <header id="head-home">
+        <div class="hamburger" onclick="showMenu()">
+            <div class="hamburger-line" id="line"></div>
+        </div>
+        <div class="head-item">
+            
+            <a href="index.html">
+                <img class="icon" src="./Bilder/home.svg" alt="home.svg">
+                Home
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="organisation.html">
+            <img class="icon" src="./Bilder/organisation.svg" alt="organisation.svg">
+                Organisation
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="iperka.html">
+            <img class="icon" src="./Bilder/iperka.svg" alt="iperka.svg">
+                IPERKA
+            </a>
+        </div>
+
+        <div class="head-item">
+            <a href="präsentation.html">
+            <img class="icon" src="./Bilder/präsentation.svg" alt="präsentation.svg">
+                Präsentationen
+            </a>
+        </div>
+        
+        <div class="head-item">
+            <a href="impressum.html">
+            <img class="icon" src="./Bilder/impressum.svg" alt="impressum.svg">
+                Impressum
+            </a>
         </div>
     </header>
     <div id="hauptteil">
@@ -46,33 +83,16 @@
                 <br>
                 Hier erwarten Sie tolle Lösungen von den im Unterricht gelösten Aufgaben.
                 <br>
-                Bei Fragen können Sie sich <a href="impressum.html">hier</a> melden.
+                Bei Fragen können Sie sich <a href="impressum.html#kontakt">hier</a> melden.
             </div>
     </div>
     <!-- <div id="footer">impressum</div> -->
 </body>
-<style>
-    body
-    {
-        background-color: #0000008a;
-        background-image: url(./Bilder/background.jpg);
-        background-size: cover;
-        background-blend-mode: multiply;
-    }
-    #hauptteil
-    {
-        background-color: rgba(0, 0, 0, 0);
-        color: white;
-    }
-    .content
-    {
-        color: black;
-        border-radius: 15px;
-        margin: 5px;
-    }
-    .content a
-    {
-        color: #221dd6;
-    }
-</style>
+<footer>
+    <div id="foot">
+        Sullivan Renner
+        <br>
+        07.06.2022, V. 2.0
+    </div>
+</footer>
 </html>
